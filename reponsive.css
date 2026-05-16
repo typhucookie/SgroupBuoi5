@@ -27,7 +27,6 @@
 }
 
 
-/* ===== DEFAULT COL ===== */
 
 [class*="col-"] {
     flex: 0 0 auto;
@@ -122,8 +121,6 @@
 }
 
 
-/* ===== XL ===== */
-
 @media (min-width: 1200px) {
 
     .container {
@@ -144,8 +141,6 @@
     .col-xl-12 { width: 100%; }
 }
 
-
-/* ===== XXL ===== */
 
 @media (min-width: 1400px) {
 
