@@ -52,7 +52,6 @@
     animation: disappear 0.5s linear forwards;
 }
 
-
 @media (min-width: 576px) {
 
     .container {
@@ -72,7 +71,6 @@
     .col-sm-11 { width: 91.666667%; }
     .col-sm-12 { width: 100%; }
 }
-
 
 @media (min-width: 768px) {
 
@@ -99,7 +97,6 @@
     .col-md-12 { width: 100%; }
 }
 
-
 @media (min-width: 992px) {
 
     .container {
@@ -119,7 +116,6 @@
     .col-lg-11 { width: 91.666667%; }
     .col-lg-12 { width: 100%; }
 }
-
 
 @media (min-width: 1200px) {
 
@@ -161,7 +157,6 @@
     .col-xxl-11 { width: 91.666667%; }
     .col-xxl-12 { width: 100%; }
 }
-
 
 @media (max-width: 768px) {
     .button {
@@ -231,10 +226,10 @@
         font-size: 40px;
     }
     .footer section p {
-    letter-spacing: 1.13px;
-    color: #FFF;
-    font-size: 18px;
-    margin-bottom: 40px;
+        letter-spacing: 1.13px;
+        color: #FFF;
+        font-size: 18px;
+        margin-bottom: 40px;
     }   
     .copyright {
         font-size: 14px;
@@ -243,7 +238,6 @@
 
 
 @keyframes appear {
-
     from {
         transform: scale(0)
     }
@@ -254,7 +248,6 @@
 }
 
 @keyframes disappear {
-
     from {
         transform: scale(1)
     }

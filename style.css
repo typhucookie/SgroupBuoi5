@@ -159,35 +159,46 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
+    height: 40px;
 }
 
-.inner-loader3 {
-    width: 5px;
-    height: 20px;
-    background-color: #622fbd;
-    display: block;
-    border-radius: 35%;
-    animation: loader3 .7s linear infinite;
+.loader3 span {
+    width: 6px;
+    height: 28px;
+    border-radius: 999px;
+    background: linear-gradient(
+        to top,
+        #7c3aed,
+        #c084fc
+    );
+    animation: loader3 0.8s ease-in-out infinite;
+    transform-origin: center bottom;
 }
 
-.inner-loader3-2 {
-    background-color: white;
-    animation-delay: .1s;
+.loader3 span:nth-child(1){
+    animation-delay:0s;
 }
 
-.inner-loader3-3 {
-    height: 15px;
-    animation: loader3-3 .7s linear infinite;
+.loader3 span:nth-child(2){
+    animation-delay:0.1s;
 }
 
-.inner-loader3-4 {
-    animation-delay: .2s;
-    background-color: white;
+.loader3 span:nth-child(3){
+    animation-delay:0.2s;
 }
 
-.inner-loader3-5 {
-    animation-delay: .4s;
+.loader3 span:nth-child(4){
+    animation-delay:0.3s;
+}
+
+.loader3 span:nth-child(5){
+    animation-delay:0.4s;
+}
+
+.loader3 span:nth-child(2),
+.loader3 span:nth-child(4){
+    background:linear-gradient(to top,#ffffff,#e9d5ff);
 }
 
 @keyframes tranlate {
@@ -256,26 +267,21 @@ h1 {
 }
 
 @keyframes loader3 {
-   0% {
-        height: 20px;
+    0%,100%{
+        height:8px;
+        opacity:.5;
     }
-    50% {
-        height: 1px;
-    }
-    100% {
-        height: 20px;
-    } 
-}
 
-@keyframes loader3-3 {
-   0% {
-        height: 15px;
+    25%{
+        height:16px;
     }
-    50% {
-        height: 5px;
-    }
-    100% {
-        height: 15px;
-    } 
-}
 
+    50%{
+        height:32px;
+        opacity:1;
+    }
+
+    75%{
+        height:20px;
+    }
+}
